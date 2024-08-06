@@ -1,0 +1,8 @@
+Model Information:
+* title:	Knee joint
+* source:	https://sketchfab.com/3d-models/knee-joint-32403bf0b688445a9001820ca878fa43
+* author:	zames1992 (https://sketchfab.com/zames1992)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

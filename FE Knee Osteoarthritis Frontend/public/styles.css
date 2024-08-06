@@ -1,0 +1,486 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: white;
+}
+
+header {
+  background-color: #D8574D;
+  margin: auto ;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+  z-index: 1;
+}
+.features{
+  width:100%;
+  height: 500px;
+  background-color:white ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.koa-info-container{
+  width:100%;
+  height: 500px;
+  background-color:white ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recommendation-container{
+  width:100%;
+  height:fit-content;
+  background-color:white ;
+}
+.exercise-container-with-4{
+  width:100%;
+  height:fit-content;
+  background-color:white ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: dense;
+}
+.exercise-container-with-3{
+  width:100%;
+  height:fit-content;
+  background-color:white ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-auto-flow: dense;
+}
+.unet-resnet-container{
+  width:100%;
+  height: 500px;
+  background-color:white ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.KneeOAHeading{
+  color: black;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px; 
+  margin-top: 20px;
+}
+.ExerciseHeading{
+  color: black;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px; 
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.KneeOADEscription{
+  color: black;
+  margin-top: 10px;
+  font-family: "Playfair Display", serif;
+  font-weight: 40px;
+  font-style: normal;
+  font-size: 16px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-right: 10px;
+}
+.koa-info-card{
+  width: 100%;
+  height:70%;
+  margin: 80px;
+  border: #A2906E solid 4px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  overflow:hidden;
+  padding-bottom: 20px;
+}
+.segment-card{
+  width: 50%;
+  height: 550px;
+  background: rgb(235,137,130);
+  background: linear-gradient(0deg, rgba(235,137,130,0.4599089635854342) 0%, rgba(224,212,197,1) 100%);
+  margin: 30px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.unet-info-card{
+  width: 100%;
+  height:72%;
+  margin: 40px;
+  margin-left: 80px;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(224,212,197,1) 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: #673F69 solid 10px;
+}
+.resnet-info-card{
+  width: 100%;
+  height:72%;
+  margin: 40px;
+  margin-right: 80px;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(224,212,197,1) 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: #673F69 solid 10px;
+}
+.learn-more-btn{
+  background-color: #673F69;
+  color: white;
+  border: none;
+  padding: 20px 35px 20px 35px;
+  margin:-18px 20px 20px 0px;
+  font-size: large;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.learn-more-unet{
+  background-color: #673F69;
+  color: white;
+  border: #673F69 solid 1px;
+  padding: 20px 30px 20px 30px;
+  margin:-18px 0px 0px 467px;
+  font-size: large;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 10px;
+}
+.Model-Image{
+  width:600px;
+  height:200px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.learn-more-resnet{
+  background-color: #673F69;
+  color: white;
+  border: #673F69 solid 1px;
+  padding: 20px 35px 20px 35px;
+  margin:-18px 438px 0px 0px;
+  font-size: large;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+}
+.KOAImage{
+  border-radius: 20px;
+}
+  .checkbox-wrapper-41 {
+    --size: 100px;
+    display: flex;  
+    flex-wrap: wrap;
+  }
+.arrowname{
+  width:60px;
+  height:60px;
+}
+  .checkbox-wrapper-41 input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--size);
+    height: calc(var(--size) / 2);
+    background-color: #fff;
+    border: 3px solid #222;
+    border-radius: 30px 100px 100px 100px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    outline: none;  
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+  }
+
+  .checkbox-wrapper-41 input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: calc(var(--size) / 2);
+    height: calc(var(--size) / 2);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(0.7);
+    border: 3px solid #222;
+    border-radius: 30px 100px 100px 100px;
+    background-color: #FFAF45;
+    box-sizing: border-box;
+    transition: all 0.5s;
+  }
+
+  .checkbox-wrapper-41 input[type="checkbox"]:checked {
+    background-color: #FFAF45;
+    border-radius: 100px 100px 30px 100px;
+  }
+
+  .checkbox-wrapper-41 input[type="checkbox"]:checked::before {
+    left: 50%;
+    background-color: #fff;
+    border-radius: 100px 100px 30px 100px;
+  }
+
+
+.partition-image{
+  width:100%;
+  height: 100px;
+}
+.checkbox-flex-box{
+  display: flex;
+}
+.input-field{
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border: #D74B76 solid 3px;
+  border-radius: 20px;
+  width: 400px;
+}
+.select {
+  appearance: none; /* Remove default arrow icon */
+  background-color: transparent; /* Make select background transparent */
+  border: none; /* Remove default select border */
+  width: calc(100% - 6px); /* Adjust width to match input field */
+  height: 100%; /* Match height with input field */
+  font-size: inherit; /* Inherit font size from parent */
+  padding: 0 5px; /* Adjust padding to align content */
+}
+
+/* Style for when select element is focused */
+select:focus {
+  outline: none; /* Remove default focus outline */
+}
+select option {
+  background-color: #fff; /* Set background color for options */
+  color: #000; /* Set text color for options */
+}
+.purple-submit-button{
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #673F69;
+  color: white;
+  border-radius: 20px;
+  width: 400px;
+  border: none;
+  font-family: "Fredericka the Great", serif;
+
+}
+.purple-button{
+  padding: 15px;
+  margin: 20px;
+  margin-top: -10px;
+  background-color: #673F69;
+  color: white;
+  border-radius: 20px;
+  width: 400px;
+  border: none;
+  font-family: "Fredericka the Great", serif;
+
+}
+.purple-file-button{
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: #673F69;
+  color: white;
+  border-radius: 20px;
+  width: 400px;
+  border: none;
+  font-family: "Fredericka the Great", serif;
+}
+.purple-file-button::-webkit-file-upload-button {
+  border: white solid 1px;
+  color: white;
+  background-color: #673F69;
+margin-right: 30px;
+}
+.purple-button::-webkit-file-upload-button {
+  border: white solid 1px;
+  color: white;
+  background-color: #673F69;
+margin-right: 30px;
+}
+/* Apply custom styling to options when hovered */
+select option:hover {
+  background-color: #D74B76 !important; /* Set background color for hovered options */
+}
+label{
+  color: black;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px; 
+  padding-top: 20px;
+}
+.feature-card{
+width: 50%;
+height: 350px;
+background: rgb(235,137,130);
+background: linear-gradient(0deg, rgba(235,137,130,0.4599089635854342) 0%, rgba(224,212,197,1) 100%);
+margin: 30px;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.center-of-parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+.feature-image{
+  width:200px;
+  height:200px;
+  margin: 30px;
+  border-radius: 20px;
+}
+.element-with-background {
+  background-image: url('transparent_square.png');
+}
+.classification-result{
+  width:100%;
+  height:100%;
+  background: rgb(215,75,118);
+  background: radial-gradient(circle, rgba(215,75,118,0.5803571428571428) 0%, rgba(197,197,197,1) 100%);
+  margin-left: 20px;
+  border-radius: 20px;
+  padding-left: 50px;
+}
+.classify-image-css{
+  width:220px;
+  height:220px;
+  margin: 20px;
+  border-radius: 20px;
+  border: white dashed 4px;
+}
+.poster-image{
+  width: 100%;
+  margin-top: 80px;
+}
+.feature-heading{
+  color: black;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px; 
+}
+header h1 {
+  color: #fff;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.video-card {
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  max-width: 400px; /* Adjust the width as needed */
+}
+
+.video-card video {
+  width: 100%;
+  display: block;
+}
+
+.video-info {
+  padding: 20px;
+}
+
+.video-info h2 {
+  margin-top: 0;
+}
+
+.video-info p {
+  margin-bottom: 0;
+}
+
+.heading-h1{
+  color: black;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 55px; 
+  padding-top: 25px;
+}
+.heading-h2{
+  color: black;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px; 
+  padding-top: 25px;
+  margin-left: 100px;
+}
+.description{
+  color: black;
+  margin-top: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 40px;
+  font-style: normal;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.sub-description{
+  color: black;
+  margin-top: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 40px;
+  font-style: normal;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 100px;
+}
+.model-summary {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+.model-summary th,
+.model-summary td {
+  border: 1px solid #897e7e;
+  padding: 10px;
+  width: 25%; /* Equal width for each column */
+}
+
+#container3D{
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
