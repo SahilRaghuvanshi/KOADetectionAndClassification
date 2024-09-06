@@ -20,6 +20,25 @@
 ![image](https://github.com/user-attachments/assets/85dc1717-b163-41ad-a80d-fc6041e8b9e5)
 ![image](https://github.com/user-attachments/assets/f97b6937-31a1-4da1-a113-a1dfdc8c33da)
 
+# Models
+  3 folders is there
+  1) BE Knee Osteoarthritis Backend
+  2) Deep Learning Models
+  3) FE Knee Osteoartritis Frontend
+
+# Deep Learning Models
+   1) U-Net
+   2) ResNet50
+#  U-Net Model
+   U-Net model is used to segment the region where the gap is in between the Knee. The loss of joint space is Osteoarthritis.
+# ResNet Model
+  ResNet50 model is used to extract the features from the masked images and clasify whether the problem is severe, mild or normal. The ResNet50 model is compile for 52 and 32 epochs results is shown in the folder.  
+# Meeting held with Doctor to understand the problem.
+  Youtube Link: https://youtu.be/WZhPu4B_OTA
+
+
+
+
 
 
 
